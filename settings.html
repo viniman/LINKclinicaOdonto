@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- settings23:07-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-admin.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+                <a href="admin.html" class="logo">
+                    <img src="assets/img/logo-white.png" width="38" height="35" alt=""> 
+                    <span><img src="assets/img/logo-name.png" width="125" height="35"></span>
+                </a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+            <ul class="nav user-menu float-right">
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                        <span class="user-img"><img class="rounded-circle" src="assets/img/user.jpg" width="40" alt="Admin">
+							<span class="status online"></span></span>
+                        <span>Usuario</span>
+                    </a>
+					<div class="dropdown-menu">
+                        <a class="dropdown-item" href="profile.html">Meu Perfil</a>
+                        <a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
+                        <a class="dropdown-item" href="settings.html">Configurações</a>
+                        <a class="dropdown-item" href="index.html">Sair</a>
+					</div>
+                </li>
+            </ul>
+            <div class="dropdown mobile-user-menu float-right">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.html">Meu Perfil</a>
+                    <a class="dropdown-item" href="edit-profile.html">Editar Perfil</a>
+                    <a class="dropdown-item" href="settings.html">Configurações</a>
+                    <a class="dropdown-item" href="index.html">Sair</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="admin.html"><i class="fa fa-home back-icon"></i> <span>Voltar</span></a>
+                        </li>
+                        <li class="menu-title">Configurações</li>
+                        <li class="active">
+                            <a href="settings.html"><i class="fa fa-building"></i> <span>Configurações da Clínica</span></a>
+                        </li>
+                        <li>
+                            <a href="roles-permissions.html"><i class="fa fa-key"></i> <span>Regras e Permissões</span></a>
+                        </li>
+                        <li>
+                            <a href="change-password.html"><i class="fa fa-lock"></i> <span>Modificar Senha</span></a>
+                        </li>
+                        <li>
+                            <a href="create-user.html"><i class="fa fa-user"></i> <span>Criar Usuário</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <form>
+                            <h3 class="page-title">Configurações da Clínica</h3>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Nome da Clínica <span class="text-danger">*</span></label>
+                                        <input class="form-control" type="text" value="Cínica Odontológica">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Pessoa Responsável</label>
+                                        <input class="form-control " value="Daniel Boaventura" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>Endereço</label>
+                                        <input class="form-control " value="Rua da Bahia, 240, Juiz de Fora, MG, 36020-000" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="form-group">
+                                        <label>País</label>
+                                        <select class="form-control select">
+                                            <option>Brasil</option>
+                                            <option>Argentina</option>
+                                            <option>EUA</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="form-group">
+                                        <label>Cidade</label>
+                                        <input class="form-control" value="Juiz de Fora" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="form-group">
+                                        <label>Estado</label>
+                                        <select class="form-control select">
+                                            <option>Minas Gerais</option>
+                                            <option>Rio de Janeiro</option>
+                                            <option>São Paulo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-3">
+                                    <div class="form-group">
+                                        <label>CEP</label>
+                                        <input class="form-control" value="36020-000" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input class="form-control" value="danielporter@example.com" type="email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Telefone</label>
+                                        <input class="form-control" value="32323232" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Celular</label>
+                                        <input class="form-control" value="98989898" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>Fax</label>
+                                        <input class="form-control" value="656565656" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>Site</label>
+                                        <input class="form-control" value="https://www.exemplo.com" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 text-center m-t-20">
+                                    <button type="button" class="btn btn-primary submit-btn">Salvar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap-admin.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+
+<!-- settings23:11-->
+</html>
